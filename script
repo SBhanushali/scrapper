@@ -1,0 +1,19 @@
+et links from single page
+	Array.from(document.querySelectorAll('div#warelist a')).map((market)=>market.href)
+
+
+get names of market from single page
+	Array.from(document.querySelectorAll('div#warelist')).map((market)=>market.innerText)
+
+
+get map src from the respective marketplace
+	document.querySelector('div.mrkets_d_02 iframe').src
+
+
+get name of respective marketplace
+	document.querySelector('div.mrkets_d_04 h1').innerText
+
+
+Commodities traded in that market
+	document.querySelector('div.mrkets_d_04 a').innerText
+
